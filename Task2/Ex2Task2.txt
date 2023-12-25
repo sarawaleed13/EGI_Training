@@ -1,0 +1,26 @@
+Task 2: Fibonacci Numbers
+****************
+List<int> generateFibonacciNumbers(int count) {
+  List<int> fibonacciNumbers = [];
+  if (count >= 1) {
+    fibonacciNumbers.add(0);
+  }
+  if (count >= 2) {
+    fibonacciNumbers.add(1);
+  }
+  for (int i = 2; i < count; i++) {
+    int nextNumber = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2];
+    fibonacciNumbers.add(nextNumber);
+  }
+  return fibonacciNumbers;
+}
+
+// Example usage
+import 'dart:io';
+
+void main() {
+  print("Enter the count of Fibonacci numbers to generate: ");
+  int count = int.parse(stdin.readLineSync()!);
+  List<int> fibonacciNumbers = generateFibonacciNumbers(count);
+  print(fibonacciNumbers);
+}

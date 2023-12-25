@@ -1,0 +1,16 @@
+Task 3: Print Reversed Order and Check for Palindrome:
+*****************************
+void printReversedOrderAndPalindrome(int N) {
+  String reversedNum = N.toString().split('').reversed.join();
+  print(reversedNum);
+
+  if (N.toString() == reversedNum) {
+    print("YES");
+  } else {
+    print("NO");
+  }
+}
+
+// Example usage
+int N = 12321;
+printReversedOrderAndPalindrome(N);

@@ -1,0 +1,11 @@
+Task 2: Print Even Numbers:
+********************************
+void printEvenNumbers(int N) {
+  for (int i = 2; i <= N; i += 2) {
+    print(i);
+  }
+}
+
+// Example usage
+int N = 10;
+printEvenNumbers(N);

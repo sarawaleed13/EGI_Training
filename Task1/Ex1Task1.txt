@@ -1,0 +1,15 @@
+Task 1: Summation of Numbers:
+**************
+void printSummation(int N) {
+  int summation = 0;
+  for (int i = 1; i <= N; i++) {
+    summation += i;
+  }
+  print(summation);
+}
+
+// Example usage
+int N = 10;
+printSummation(N);
+
+
